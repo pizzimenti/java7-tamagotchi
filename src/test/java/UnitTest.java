@@ -9,6 +9,12 @@ public class UnitTest {
     assertEquals(true, myPet instanceof Tamagotchi);
   }
 
+  @Test
+  public void Tamagotchi_isHungry_false() {
+    Tamagotchi myPet = new Tamagotchi("Suki");
+    assertEquals("I am not hungry", myPet.isHungry());
+  }
+
 /*
 @Test
 public void giveChange_25cents_1quarter() {
