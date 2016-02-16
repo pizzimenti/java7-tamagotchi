@@ -1,0 +1,25 @@
+has name
+gets aged
+gets hungry
+gets tired
+needs activity
+is alive
+
+
+time object
+
+
+
+fed one click ago	        not fed         	not hungry
+fed two clicks ago	      not fed	           hungry
+fed two click ago	        fed	              not hungry
+
+
+is hungry
+            last fed: morning, queried: morning	          no
+	          last fed: morning, queried: afternoon       	yes
+	          last fed: morning, queried: evening          	dead
+
+is tired
+            last slept: evening                           no
+            last slept:

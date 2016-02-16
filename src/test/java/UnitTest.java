@@ -3,7 +3,11 @@ import static org.junit.Assert.*;
 
 public class UnitTest {
 
-
+  @Test
+  public void Tamagotchi_instatiatesCorrectly_true() {
+    Tamagotchi myPet = new Tamagotchi("Suki");
+    assertEquals(true, myPet instanceof Tamagotchi);
+  }
 
 /*
 @Test
