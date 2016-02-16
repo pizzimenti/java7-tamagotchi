@@ -8,10 +8,16 @@ public class Tamagotchi {
   }
 
   public String isHungry() {
-    if (mFed == 3) {
+    if (mFed > 2) {
       return "I am not hungry";
-    }
-    return "error";
+    } else if (mFed <= 2 && mFed >0) {
+      return "I am hungry";
+    } else if (mFed <= 0) {
+      return "You've starved me, you bastard!";
+    } return "hunger error";
   }
 
+  public void time() {
+    mFed--;
+  } //end of time
 } //end Tamagotchi class
